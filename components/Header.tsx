@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Search from './Search';
 
 export default function Header() {
   return (
-    <div className='p-3'>
+    <div className='p-3 flex items-center justify-between'>
       <div className='flex items-center space-x-4'>
         <button className='hover:bg-gray-200 active:bg-gray-300 rounded-full p-2'>
           <svg
@@ -30,6 +31,7 @@ export default function Header() {
           />
         </Link>
       </div>
+      <Search />
     </div>
   );
 }
